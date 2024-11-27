@@ -61,6 +61,11 @@
 
 #include "support.h"
 
+/* All of the files to make this a unity build. */
+#include "main.c"
+#include "boardsupport.c"
+
+
 #define LOCAL_SCALE_FACTOR 1
 
 #define PI 3.141592653589793
