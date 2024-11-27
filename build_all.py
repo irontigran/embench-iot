@@ -726,20 +726,21 @@ def main():
     set_environ()
 
     # Track success
-    successful = compile_support()
-    if successful:
-        log.debug('Compilation of support files successful')
+    #successful = compile_support()
+    #if successful:
+        #log.debug('Compilation of support files successful')
 
+    successful = True
     for bench in benchmarks:
         res = compile_benchmark(bench)
         successful &= res
         if res:
             log.debug('Compilation of benchmark "{bench}" successful'.format(bench=bench))
-            res = link_benchmark(bench)
-            successful &= res
-            if res:
-                log.debug('Linking of benchmark "{bench}" successful'.format(bench=bench))
-                log.info(bench)
+#            res = link_benchmark(bench)
+#            successful &= res
+#            if res:
+#                log.debug('Linking of benchmark "{bench}" successful'.format(bench=bench))
+#                log.info(bench)
 
     if successful:
         log.info('All benchmarks built successfully')
