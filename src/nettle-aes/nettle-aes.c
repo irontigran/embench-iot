@@ -18,6 +18,10 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+/* All of the files to make this a unity build. */
+#include "main.c"
+#include "boardsupport.c"
+
 /* This scale factor will be changed to equalise the runtime of the
    benchmarks. */
 #define LOCAL_SCALE_FACTOR 78
