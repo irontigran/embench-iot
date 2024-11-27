@@ -14,9 +14,16 @@
    Original code from: https://github.com/tz1/qrduino */
 
 #include "support.h"
-#include "qrencode.h"
+#include "qrduino/qrencode.h"
 
 #include <string.h>
+
+/* All of the files to make this a unity build. */
+#include "main.c"
+#include "beebsc.c"
+#include "boardsupport.c"
+#include "qrduino/qrencode.c"
+#include "qrduino/qrframe.c"
 
 /* This scale factor will be changed to equalise the runtime of the
    benchmarks. */
