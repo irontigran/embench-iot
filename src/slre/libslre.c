@@ -26,6 +26,10 @@
 
 #include "slre.h"
 
+/* All of the files to make this a unity build. */
+#include "main.c"
+#include "boardsupport.c"
+
 #define MAX_BRANCHES 100
 #define MAX_BRACKETS 100
 #define ARRAY_SIZE(ar) (int) (sizeof(ar) / sizeof((ar)[0]))
