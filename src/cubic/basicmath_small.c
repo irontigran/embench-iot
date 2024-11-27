@@ -11,6 +11,14 @@
 #include "support.h"
 #include "snipmath.h"
 
+/* All of the files to make this a unity build. */
+#include "main.c"
+#include "boardsupport.c"
+#include "libcubic.c"
+#include "pi.h"
+#include "snipmath.h"
+#include "sniptype.h"
+
 /* This scale factor will be changed to equalise the runtime of the
    benchmarks. */
 #define LOCAL_SCALE_FACTOR 10
